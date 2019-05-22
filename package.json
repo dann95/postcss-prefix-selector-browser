@@ -2,7 +2,7 @@
   "name": "postcss-prefix-selector-browser",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "browserify src/index.js -s prefixCSSSelector -o > index.js"
   },
