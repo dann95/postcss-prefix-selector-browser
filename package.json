@@ -1,0 +1,48 @@
+{
+  "name": "postcss-prefix-selector-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -s prefixCssSelector -o dist/prefix-css-selector.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dann95/postcss-prefix-selector-browser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dann95/postcss-prefix-selector-browser/issues"
+  },
+  "homepage": "https://github.com/dann95/postcss-prefix-selector-browser#readme",
+  "dependencies": {
+    "babel-cli": "6.11.4",
+    "babel-core": "6.13.2",
+    "babel-eslint": "6.1.2",
+    "babel-istanbul": "0.11.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-preset-es2015": "6.13.2",
+    "babelify": "7.3.0",
+    "browserify": "^16.2.3",
+    "postcss": "^7.0.16",
+    "postcss-prefix-selector": "^1.7.2",
+    "uglifyify": "^5.0.1"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ],
+          "plugins": [
+            "add-module-exports"
+          ]
+        }
+      ]
+    ]
+  }
+}

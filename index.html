@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="dist/prefix-css-selector.js"></script>
+<script>
+    const original = `
+
+.xpto {
+    color: red;
+}
+
+.blabla {
+    font-size: 16px;
+}
+
+
+`;
+
+    const modified = prefixCssSelector(original, '#vrau');
+
+    console.log(modified);
+
+</script>
+</body>
+</html>
